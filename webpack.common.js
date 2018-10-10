@@ -17,6 +17,7 @@ module.exports = {
             template:"./src/index.html",
             filename:"./index.html"
         }),
+        new CheckerPlugin()
     ],
     module: {
         rules: [
@@ -31,7 +32,4 @@ module.exports = {
         path: path.resolve('./dist'),
         publicPath: "/",
     },
-    plugins: [
-        new CheckerPlugin()
-    ]
 }
