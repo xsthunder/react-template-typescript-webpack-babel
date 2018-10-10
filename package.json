@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --open --config ./webpack.dev.js"
+    "start": "webpack-dev-server --open --config ./webpack.dev.js",
+    "build": "webpack --config ./webpack.common.js"
   },
   "keywords": [],
   "author": "",
@@ -14,19 +15,25 @@
     "@types/echarts": "^4.1.1",
     "@types/react": "^16.4.14",
     "@types/react-dom": "^16.0.7",
-    "awesome-typescript-loader": "^5.2.1",
     "echarts": "^4.2.0-rc.1",
     "echarts-for-react": "^2.0.15-beta.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "typescript": "^3.0.3",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.1",
     "webpack-dev-server": "^3.1.9",
     "webpack-merge": "^4.1.4"
   },
   "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-react": "^7.0.0",
+    "awesome-typescript-loader": "^5.2.1",
     "clean-webpack-plugin": "^0.1.19",
-    "html-webpack-plugin": "^3.2.0"
+    "css-loader": "^1.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "typescript": "^3.1.1"
   }
 }
