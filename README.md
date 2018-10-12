@@ -1,2 +1,14 @@
-第六周检查
-每周三上机，二教106
+# Usage
+
+## Development
+
+```
+npm i
+npm start
+```
+
+## Production
+
+```
+npm run build
+```
