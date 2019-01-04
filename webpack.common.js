@@ -22,6 +22,14 @@ module.exports = {
     module: {
         rules: [
             { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
+            /* see https://www.cnblogs.com/raion/p/8053799.html */
+            { test: /\.jsx?$/, loader: {
+                loader:"babel-loader",
+                options:{
+                      "presets": ["@babel/preset-react"],
+                        "plugins": ["@babel/plugin-syntax-object-rest-spread"]
+                }
+            } },
             { test:/\.html$/, use:[ { loader:"html-loader" } ] },
             { test: /\.css$/, use: [ 'style-loader', 'css-loader' ] },
         ]

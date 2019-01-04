@@ -1,0 +1,3 @@
+[submodule "rechatbot"]
+	path = rechatbot
+	url = git@github.com:xsthunder/rechatbot.git
