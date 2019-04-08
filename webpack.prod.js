@@ -3,7 +3,7 @@ const common = require('./webpack.common.js');
 const Webpack = require('webpack');
 
 module.exports = merge(common, {
-  mode: 'development',
+  mode: 'production',
   // Enable sourcemaps for debugging webpack's output.
   devtool: "source-map",
   devServer: {
